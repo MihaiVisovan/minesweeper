@@ -3,6 +3,14 @@
   src: url("fonts/war.ttf") format("opentype");
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .main-wrapper {
   display: flex;
   flex-direction: row;
