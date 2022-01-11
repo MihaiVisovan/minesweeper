@@ -3,6 +3,14 @@
   src: url("fonts/war.ttf") format("opentype");
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .main-wrapper {
   display: flex;
   flex-direction: row;
@@ -34,11 +42,19 @@
 
 .flags-timer-wrapper {
   font-family: war;
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+  .flags-timer-wrapper {
+    font-family: war;
+    display: block;
+    padding: 0 20px;
+  }
+}
+
 
 .flags-timer {
   font-size: 3rem;
@@ -54,6 +70,7 @@
   display: flex;
   flex-wrap: wrap;
   width: calc(30px * 35);
+  margin-bottom: 2rem;
 }
 
 .box {
